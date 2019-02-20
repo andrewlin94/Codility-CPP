@@ -1,8 +1,8 @@
 #include <algorithm>
-#include <vector>
 #include <iostream>
-
+#include <vector>
 using namespace std;
+
 int solution(vector<int> &A) {
   sort(A.begin(), A.end());
   if (A.size() == 0) {
@@ -11,15 +11,17 @@ int solution(vector<int> &A) {
     unsigned int i;
     for (i = 0; i != A.size(); ++i) {
       if (A[i] != i+1) {
-        return i+1;
+        return 0;
       }
     }
-    return i+1;
+  return 1;
   }
 }
 
 int main(void) {
-  vector<int> A = {2, 3, 1, 5};
-  cout << "Expected 4. Solution: " << solution(A);
+  vector<int> A = {4, 1, 3, 2};
+  cout << "Expected 1. Solution: " << solution(A);
+  A = {4, 1, 3};
+  cout << "Expected 0. Solution: " << solution(A);
   return 0;
 }

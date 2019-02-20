@@ -4,27 +4,27 @@ using namespace std;
 
 vector<int> solution(vector<int> &A, int K) {
     // write your code in C++14 (g++ 6.2.0)
-    vector<int> result;
-    if (A.size() == 0) {
-        return result;
-    }else if (A.size() == 1 || K%A.size() == 0) {
-        return A;
-    }else {
-        if (K >= A.size()) {
-            K = K%A.size();
-        }
-        for (auto it = A.end()-K; it != A.end(); ++it) {
-            result.push_back(*it);
-            // cout << *it << endl;        
-        }
-        for (auto it = A.begin(); it != A.end()-K; ++it) {
-            result.push_back(*it);      
-        }
-    }
+  vector<int> result;
+  if (A.size() == 0) {
     return result;
+  }else if (A.size() == 1 || K%A.size() == 0) {
+    return A;
+  }else {
+    if (K >= A.size()) {
+      K = K%A.size();
+    }
+    for (auto it = A.end()-K; it != A.end(); ++it) {
+      result.push_back(*it);
+      // cout << *it << endl;        
+    }
+    for (auto it = A.begin(); it != A.end()-K; ++it) {
+      result.push_back(*it);      
+    }
+  }
+  return result;
 }
 
-int main() {
+int main(void) {
   vector<int> answer;
   vector<int> A = {3, 8, 9, 7, 6};
   answer = solution(A, 3);
@@ -49,4 +49,5 @@ int main() {
     cout << x << " ";  
   }
   cout << "]" << endl;
+  return 0;
 }
