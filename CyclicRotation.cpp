@@ -1,6 +1,4 @@
-#include <vector>
-#include <iostream>
-using namespace std;
+#include "all.h"
 
 vector<int> solution(vector<int> &A, int K) {
     // write your code in C++14 (g++ 6.2.0)

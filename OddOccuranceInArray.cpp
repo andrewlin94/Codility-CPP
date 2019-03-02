@@ -1,8 +1,5 @@
 #include <unordered_map>
-#include <vector>
-#include <iostream>
-
-using namespace std;
+#include "all.h"
 
 int solution(vector<int> &A) {
   // write your code in C++14 (g++ 6.2.0)

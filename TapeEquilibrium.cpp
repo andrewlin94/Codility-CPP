@@ -1,8 +1,5 @@
 #include <cmath>
-#include <vector>
-#include <iostream>
-
-using namespace std;
+#include "all.h"
 
 int solution(vector<int> &A) {
   if (A.size() == 2) {

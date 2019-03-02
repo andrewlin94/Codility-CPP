@@ -1,7 +1,5 @@
 #include <algorithm>
-#include <iostream>
-#include <vector>
-using namespace std;
+#include "all.h"
 
 int solution(vector<int> &A) {
   sort(A.begin(), A.end());

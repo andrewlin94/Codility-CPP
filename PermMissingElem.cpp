@@ -1,8 +1,6 @@
 #include <algorithm>
-#include <vector>
-#include <iostream>
+#include "all.h"
 
-using namespace std;
 int solution(vector<int> &A) {
   sort(A.begin(), A.end());
   if (A.size() == 0) {

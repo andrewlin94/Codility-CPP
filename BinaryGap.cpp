@@ -1,7 +1,4 @@
-#include <vector>
-#include <string>
-#include <iostream>
-using namespace std;
+#include "all.h"
 
 int solution(int N) {
     // write your code in C++14 (g++ 6.2.0)

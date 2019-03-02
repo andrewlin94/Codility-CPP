@@ -1,7 +1,5 @@
+#include "all.h"
 #include <unordered_set>
-#include <iostream>
-#include <vector>
-using namespace std;
 
 int solution(int X, vector<int> &A) {
   unordered_set<int> leaves;

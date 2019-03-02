@@ -1,7 +1,4 @@
-#include <algorithm>
-#include <vector>
-#include <iostream>
-using namespace std;
+#include "all.h"
 
 // 100% Correctness + 100% Performance = 100% Task Score
 // Time Complexity O(M+N)

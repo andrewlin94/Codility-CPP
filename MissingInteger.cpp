@@ -1,7 +1,5 @@
+#include "all.h"
 #include <algorithm>
-#include <iostream>
-#include <vector>
-using namespace std;
 
 int solution(vector<int> &A) {
     // write your code in C++14 (g++ 6.2.0)
